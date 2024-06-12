@@ -1,8 +1,47 @@
 /* ------------------------------- 1. Global Styles -------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Pars: #5722cd;
+    --Roze:#ED4385;
+    --Zwart: #0C0C0C;
+    --Lichtpaars:#F2F0FF;
+    --Lichtgrijs:#F3F6F9;
+    --Grijs: #7A7A7A;
+}
+
+
+
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
+
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+
 /* ------------------------------- 3. Layout --------------------------------------- */
+
+
+
+
 
 /* --------------- 3.1 Reusables ----------------------- */
 
