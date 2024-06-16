@@ -113,9 +113,10 @@ section.sct_wrk::before {
     position: absolute;
     font-size: 400px;
     z-index: 1;
-    line-height:0;
+    line-height: 0;
 
 }
+
 section.sct_srvc::before {
     content: 'service';
     font-weight: 900;
@@ -123,11 +124,9 @@ section.sct_srvc::before {
     position: absolute;
     font-size: 400px;
     z-index: 1;
-    line-height:200px;
+    line-height: 200px;
 
 }
-
-
 
 
 /* ---------------  Header ------------------------- */
@@ -142,19 +141,18 @@ nav {
     z-index: 1000;
     color: var(--Lichtgrijs);
     padding: 0 50px;
-
+    width: 100%;
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: center;
     align-content: center;
+    gap: 60px;
 }
 
 nav ul li {
-    margin-left: 50px;
     font-weight: 100;
     font-size: 1.5rem;
 }
@@ -206,7 +204,6 @@ section.sct_hll {
     gap: 50px;
 
 
-
 }
 
 section.sct_hll div h2 {
@@ -217,7 +214,7 @@ section.sct_hll div h2 {
 }
 
 /*--work--*/
-.sct_wrk{
+.sct_wrk {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -226,6 +223,7 @@ section.sct_hll div h2 {
     clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 96%);
 
 }
+
 .inner_section {
     display: flex;
     flex-direction: row;
@@ -264,22 +262,17 @@ section.sct_hll div h2 {
     width: 20px;
     background-color: var(--Pars);
     position: absolute;
-    right: px;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 15px;
     transition: width .6s ease-in-out;
 
 }
+
 .inner_section_content a:hover::after {
     width: 50px;
 
 }
-
-
-
-
-
 
 
 .inner_section_content p {
@@ -307,6 +300,10 @@ div.een_uno {
 .zgz_icon {
     max-width: 90px;
 }
+
+
+/*servicios*/
+
 .sct_srvc {
     display: flex;
     flex-direction: column;
@@ -431,6 +428,36 @@ footer {
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 @media (max-width: 768px) {
+
+
+    /*NAV mbl*/
+    nav {
+        justify-content: center;
+        min-height: 70px;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        z-index: 1000;
+        color: var(--Lichtgrijs);
+        padding: 0 50px;
+
+    }
+
+    /*WORK mbl*/
+    .inner_section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .inner_section_img {
+        width: 100%;
+    }
+
+    .inner_section_img img{
+        height: auto;
+        max-width: 100%;
+    }
+
     section {
         padding: 50px;
     }
@@ -440,7 +467,7 @@ footer {
     }
 
     .contact_form ul {
-        width: 80%;
+        width: 90%;
     }
 
     .service_section li {
