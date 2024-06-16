@@ -1,56 +1,450 @@
-/* ------------------------------- 1. Global Styles -------------------------------- */
-*{
+/* ------------------------------ 1. Global Styles -------------------------------- */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 14px;
+    border: none;
 }
+
 
 :root {
     --Pars: #5722cd;
-    --Roze:#ED4385;
+    --Roze: #ED4385;
     --Zwart: #0C0C0C;
-    --Lichtpaars:#F2F0FF;
-    --Lichtgrijs:#F3F6F9;
+    --Lichtpaars: #F2F0FF;
+    --Lichtgrijs: #F3F6F9;
     --Grijs: #7A7A7A;
 }
-
-
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
 
-
-p{
+body {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: normal;
 }
 
+h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
 
 
+h1 {
+    font-size: 2.986rem;
+}
+
+h2 {
+    font-size: 2.074rem;
+}
+
+h3 {
+    font-size: 1.728rem;
+}
+
+h4 {
+    font-size: 1.44rem;
+}
+
+.fnt_small {
+    font-size: 0.833rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
 
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 
-
-
-
 /* --------------- 3.1 Reusables ----------------------- */
 
-/* --------------- 3.2 Other --------------------------- */
+section {
+    padding: 75px 100px;
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
+}
 
-/* --------------- 4.1 Header ------------------------- */
+button {
+    background-color: var(--Roze);
+    color: var(--Lichtgrijs);
+    padding: 24px 45px;
+    border-radius: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 
-/* --------------- 4.2 Introduction ------------------- */
+a.non_dec {
+    text-decoration: none;
+}
+
+.grijs_bg {
+    background-color: var(--Lichtgrijs);
+}
+
+.text_cnt {
+    width: 60%;
+    z-index: 10;
+}
+
+
+section.sct_hll::after {
+    content: 'hello';
+    font-weight: 900;
+    color: var(--Lichtpaars);
+    position: absolute;
+    font-size: 400px;
+    z-index: 1;
+}
+
+section.sct_wrk::before {
+    content: 'work';
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    font-size: 400px;
+    z-index: 1;
+    line-height:0;
+
+}
+section.sct_srvc::before {
+    content: 'service';
+    font-weight: 900;
+    color: var(--Lichtpaars);
+    position: absolute;
+    font-size: 400px;
+    z-index: 1;
+    line-height:200px;
+
+}
+
+
+
+
+/* ---------------  Header ------------------------- */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    min-height: 70px;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    color: var(--Lichtgrijs);
+    padding: 0 50px;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-content: center;
+}
+
+nav ul li {
+    margin-left: 50px;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+
+header {
+    min-height: 90vh;
+    background: rgb(87, 34, 205);
+    background: linear-gradient(135deg, rgba(87, 34, 205, 1) 0%, rgba(12, 12, 12, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+
+}
+
+.stripe_line {
+    margin-bottom: -5px;
+    margin-top: auto;
+}
+
+
+.content_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    justify-self: center;
+    margin-top: auto;
+}
+
+
+.content_wrapper h1, header p {
+    text-align: center;
+    color: var(--Lichtgrijs);
+    margin-bottom: 30px;
+}
+
+
+/* --------------- Main ------------------------- */
+
+section.sct_hll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+
+
+}
+
+section.sct_hll div h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--Pars);
+}
+
+/*--work--*/
+.sct_wrk{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 200px;
+    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 96%);
+
+}
+.inner_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    z-index: 50;
+
+}
+
+.inner_section_content {
+    padding-left: 2rem;
+    padding-right: 12rem;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+
+}
+
+.inner_section_content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--Pars);
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+
+}
+
+.inner_section_content a::after {
+
+    content: '';
+    height: 3px;
+    width: 20px;
+    background-color: var(--Pars);
+    position: absolute;
+    right: px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 15px;
+    transition: width .6s ease-in-out;
+
+}
+.inner_section_content a:hover::after {
+    width: 50px;
+
+}
+
+
+
+
+
+
+
+.inner_section_content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.inner_section_content:nth-child(odd) div {
+    flex-direction: column-reverse;
+}
+
+.een_uno {
+    order: 2;
+}
+
+div.een_uno {
+    padding-left: 10rem;
+    padding-right: 2rem;
+}
+
+.twee_dos {
+    order: 1;
+}
+
+.zgz_icon {
+    max-width: 90px;
+}
+.sct_srvc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+
+.service_section {
+    list-style-type: none;
+    margin: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+    z-index: 60;
+    margin-top: 100px;
+
+
+}
+
+
+.service_section li {
+    width: 100%;
+    padding: 50px;
+    -ms-flex: 0 0 30%;
+    flex: 0 30%;
+    max-width: 30%;
+    border: 1px solid #5722cd;
+    margin: 20px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px, rgba(0, 0, 0, 0.1) 0px 8px 16px -8px;
+    background-color: white;
+}
+
+
+.service_section li > div > img {
+    width: 70px;
+    margin-bottom: 10px;
+
+}
+
+.service_section li > h4 {
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: var(--Pars);
+}
+
+.service_section li > p {
+    color: var(--Grijs);
+}
+
+.form_section {
+    background-color: var(--Pars);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+}
+
+.inner_form, .contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.inner_form h2, .inner_form p {
+    color: var(--Lichtgrijs);
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+.contact_form ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 30px;
+    margin-bottom: 50px;
+
+}
+
+.contact_form ul li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+
+.contact_form ul li label {
+    color: var(--Lichtgrijs);
+}
+
+.contact_form ul li input {
+    min-height: 50px;
+    border-radius: 3px;
+}
+
+.contact_form ul li textarea {
+    min-height: 150px;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: var(--Zwart);
+    color: var(--Lichtgrijs);
+    text-align: center;
+    padding: 40px 0;
+    font-weight: 200;
+
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+@media (max-width: 768px) {
+    section {
+        padding: 50px;
+    }
+
+    .inner_section_content {
+        padding: 0 2rem;
+    }
+
+    .contact_form ul {
+        width: 80%;
+    }
+
+    .service_section li {
+        flex: 0 100%;
+        max-width: 100%;
+    }
+}

@@ -17,64 +17,81 @@
 
 <!--Navbar-->
 <nav>
-    <a href="#"><img src="./assets/Logo_test.svg" alt="Logo Home"></a>
     <ul>
-        <li>Case Studies</li>
-        <li>Services</li>
-        <li>Contac Us</li>
+        <li><p>Case Studies</p></li>
+        <li><p>Services</p></li>
+        <li><p>Contac Us</p></li>
     </ul>
 </nav>
 
 <!--Header-->
 
 <header>
-    <h1>Your website is an investment in the success of your business.</h1>
-    <p>We are here to help you succeed.</p>
-    <button>Let's work together</button>
+    <div class="content_wrapper">
+        <div class="text_cnt">
+            <h1>Your website is an investment in the success of your business.</h1>
+            <p>We are here to help you succeed.</p>
+        </div>
+        <button>Let's work together</button>
+
+    </div>
+    <div class="stripe_line">
+        <img src="./assets/squiggle_line_stripe.svg" alt="">
+    </div>
 </header>
 
 <main>
 
     <!--Hello-->
 
-    <section>
-        <h2>Rekupe is a digital agency in Los Angeles. We use strategic UX, SEO optimization and beautiful visual
-            designs to help your business grow. We see every project as a fresh opportunity, pushing ourselves to create
-            new digital experiences. </h2>
-
-        <p>Have a question? <a href="">Click here </a> to contact us!</p>
+    <section class="sct_hll container">
+        <div class="text_cnt">
+            <h2>Rekupe is a digital agency in Los Angeles.</h2>
+            <h2>We use strategic UX, SEO optimization and beautiful visual
+                designs to help your business grow.</h2>
+            <h2>We see every project as a fresh opportunity, pushing ourselves to
+                create new digital experiences.</h2>
+        </div>
+        <p>Have a question? <a href="#" class="non_dec">Click here </a> to contact us!</p>
     </section>
 
     <!--Work-->
 
-    <section>
+    <section class="grijs_bg sct_wrk">
         <div class="inner_section">
-            <div class="inner_section_content_left">
+            <div class="inner_section_content ">
                 <h3>Rolling Stone</h3>
+                <img class="zgz_icon" src="./assets/squiggle_line.svg" alt="">
                 <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global
                     icon.</p>
                 <a href="#">View Project</a>
             </div>
-            <div class="inner_section_img">
+            <div class="inner_section_img ">
                 <img src="./assets/work-image-01.jpeg" alt="">
-            </div>
-        </div>
-        <div class="inner_section">
-            <div class="inner_section_img">
-                <img src="./assets/work-image-02.jpeg" alt="">
-            </div>
-            <div class="inner_section_content_right">
-                <h3>Variety</h3>
-                <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
-                <a href="#">View Project</a>
             </div>
         </div>
 
         <div class="inner_section">
-            <div class="inner_section_content_left">
+            <div class="inner_section_content een_uno">
+                <h3>Variety</h3>
+                <img class="zgz_icon" src="./assets/squiggle_line.svg" alt="">
+                <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with
+                    archive of content dating back to 1905.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="inner_section_img twee_dos">
+                <img src="./assets/work-image-02.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="inner_section">
+            <div class="inner_section_content">
                 <h3>Worth</h3>
+                <img class="zgz_icon" src="./assets/squiggle_line.svg" alt="">
+
                 <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
-                 <a href="#">View Project</a>
+
+                <a href="#">View Project</a>
             </div>
             <div class="inner_section_img">
                 <img src="./assets/work-image-03.jpeg" alt="">
@@ -85,24 +102,90 @@
     </section>
 
     <!--Services-->
-    
-    
-    <section>
-        <ul>
+
+
+    <section class="container sct_srvc">
+        <ul class="service_section">
             <li>
                 <div><img src="./assets/icon_web-design.svg" alt=""></div>
                 <h4>Web Design</h4>
-                <p>Good web design is how companies stand out from their competitors. High quality web design leads to increased user conversion and engagement. Through a proven web design process, we help clients launch websites and products that improve on their bottom line.</p>
+                <p class="fnt_small">Good web design is how companies stand out from their competitors. High quality web
+                    design leads to
+                    increased user conversion and engagement. Through a proven web design process, we help clients
+                    launch websites and products that improve on their bottom line.</p>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+                <div><img src="./assets/icon_web-development.svg" alt=""></div>
+                <h4>Web Development</h4>
+                <p class="fnt_small">Modern websites need to be responsive and fully functional at all sizes. We develop
+                    all of our sites
+                    with a mobile first approach and ensure that our code quality is clean, organized and performant.
+                    Already have a design but need it developed? We’re here to help!</p>
+            </li>
+            <li>
+                <div><img src="./assets/icon_ux.svg" alt=""></div>
+                <h4>User Experience</h4>
+                <p class="fnt_small">In order to build successful products you have to understand the user. We create
+                    user personas,
+                    wireframes and prototypes to test with users. This allows us to gather feedback which helps to shape
+                    the product and can quickly eliminate potential risks – saving you time and money.
+                </p>
+            </li>
+            <li>
+                <div><img src="./assets/icon_graphic-design.svg" alt=""></div>
+                <h4>Logo Design + Branding</h4>
+                <p class="fnt_small">Good web design is how companies stand out from their competitors. High quality web
+                    design leads to
+                    increased user conversion and engagement. Through a proven web design process, we help clients
+                    launch websites and products that improve on their bottom line.</p>
+            </li>
+            <li>
+                <div><img src="./assets/icon_seo.svg" alt=""></div>
+                <h4>SEO </h4>
+                <p class="fnt_small">Do you want your site to rank higher in search results? Google is constantly
+                    changing their
+                    algorithms for how they rank pages. Don’t worry about constantly playing catch-up. We will make sure
+                    your website it optimized, providing you the best opportunities for organic search exposure.</p>
+            </li>
+            <li>
+                <div><img src="./assets/icon_copywriting.svg" alt=""></div>
+                <h4>Copy Writing </h4>
+                <p class="fnt_small">Brand messaging needs to be clear, direct and easy to understand to be effective. A
+                    unique tone of
+                    voice will help you stand out from the crowd and build brand loyalty. We work with you to establish
+                    your brand bible and ensure your messaging is focused and targeted.</p></li>
         </ul>
     </section>
 
+    <!--Form-->
+
+    <section class=" form_section ">
+        <div class="text_cnt inner_form">
+            <h2>Let's work together</h2>
+            <p>Have a question? Need a quote? Let us know!</p>
+            <form class=" contact_form" action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="user_name"/>
+                    </li>
+                    <li>
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="user_mail"/>
+                    </li>
+                    <li>
+                        <label for="msg">Mensaje:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                </ul>
+                <button type="submit">Verzenden</button>
+            </form>
+        </div>
+    </section>
+
 </main>
-<footer></footer>
+<footer>
+    <p class="fnt_small">Business website opdracht © NOVI Hogeschool 2022</p>
+</footer>
 </body>
 </html>
